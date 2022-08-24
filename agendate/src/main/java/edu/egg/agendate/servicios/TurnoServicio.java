@@ -50,7 +50,7 @@ public class TurnoServicio {
         mensaje.setFrom("sistemadeturnosegg@gmail.com");
         mensaje.setTo(email);
         mensaje.setSubject("Confirmación de turno");
-        mensaje.setText("Hola " + nombre + " su turno ha sido reservado para la fecha " + turnoDto.getFecha() + " ,hora " + turnoDto.getHora() );
+        mensaje.setText("Hola " + nombre + " su turno ha sido reservado para el dia" + turnoDto.getFecha() + " ,hora " + turnoDto.getHora() );
         mailSender.send(mensaje);
          */
         return turnoRepositorio.save(turno);
